@@ -1,0 +1,193 @@
+/* Web Fonts ----------------------- */
+
+
+/* Base Styles --------------------- */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 1.25em; /* 20px on most screens */
+  width: 100vw;
+}
+@font-face {
+  font-family: "headerFont";
+  src: url("../fonts/abolition-regular-webfont.woff") format("woff");
+}
+body{
+  margin: 0;
+}
+header{
+  background: url("../img/mountains.jpg"), rgba(255, 106, 0, 0.754);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40vw;
+  text-align: center;
+  padding-top: 5%;
+  position: relative;
+}
+.title{
+  text-align: center;
+  color: white;
+  font-size: 32px;
+}
+h1{
+  color: white;
+  font-size: 72px;
+  text-transform: uppercase;
+  font-family: "headerFont";
+  letter-spacing: 4px;
+}
+
+/* Main Styles --------------------- */
+main{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1300px;
+}
+section{
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.409);
+  padding-bottom: 100px;
+  width: 100%;
+  max-width: 1300px;
+}
+.first{
+  padding: 50px 100px 100px 100px;
+}
+
+.callout{
+  background: linear-gradient(90deg, rgb(221, 217, 210), orange, orange); 
+  font-size: 1.25em;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(166, 10, 10);
+  border-radius: 10px;
+  width: 200px;
+  margin: auto;
+  font-weight: 100;
+  margin-top: 20px ;
+}
+/* Media Queries ------------------- */
+.intro{
+  width: 70%;
+  margin: auto;
+  font-size: 1.25rem;
+  padding-top: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 40px;
+  color: black;
+}
+#wildlife{
+  background: url(../img/bear.jpg), rgba(0, 0, 0, 0.384);
+  background-blend-mode: multiply;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  border-top: 20px rgb(255, 132, 0) solid;
+  border-radius: 10px;
+  margin-top: 100px;
+  box-shadow: inset 20px 20px 15px black, inset -20px -20px 15px black;  
+}
+#wildlife p{
+  padding-left: 20%;
+  padding-right: 30%;
+  color: white;
+  max-width: 1500px;
+}
+#wildlife a{
+  color:rgb(255, 132, 0) ;
+}
+h2{
+  margin-top: 200px;
+  margin-left: 200px;
+  color: white;
+  font-size: 2em;
+  text-transform: uppercase;
+  max-width: 600px;
+  width: 650px;
+  font-family: "headerFont";
+}
+a{
+  text-decoration: none;
+}
+p{
+  color: white;
+  font-size: 1.25em;
+}
+.lastsection{
+  margin: auto;
+}
+.column{
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+  padding-top: 100px;
+  margin: auto;
+  position: relative;
+}
+.column img{
+  width: 95%;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  
+}
+h3{
+  font-weight: 700;
+  font-size: 1.25em;
+  padding-left: 20px;
+}
+.column p{
+  color: black;
+  font-size: 1em;
+  padding-left: 20px;
+}
+ul a{
+  color: orange;
+  font-size: 1em;
+}
+
+ol {
+  font-size: 1em;
+}
+footer p{
+  color: black;
+  font-size: 1em;
+}
+footer a {
+  color: orange;
+}
+footer{
+  text-align: center;
+}
+
+.arrow{
+  color: white;
+  font-size: 100px;
+  margin-top: 100px;
+  transition-timing-function: linear;
+}
+.arrow:hover{
+  font-size: 200px;
+}
+.callout:hover {
+  background: white;
+  color: orange;
+  box-shadow: 3px 3px 5px black;
+  border: 0 2px 2px 0;
+}
+.column:hover:before{
+  content: "Save";
+  color: rgb(166, 10, 10);
+  background: linear-gradient(90deg, rgb(221, 217, 210), orange, orange);
+  border-radius: 5px;
+  width: auto;
+  position: absolute;
+  padding: 0 10px;
+  text-align: center;
+  margin-left: 16px;
+}
